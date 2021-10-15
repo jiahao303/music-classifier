@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Music Classifier Project by Group Spec-Taco-Lar"
+authors: Jiahao Huang, Stella Wang, Tiana Liang
 date: 2021-10-14 19:00:00
 ---
 
