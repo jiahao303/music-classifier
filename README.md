@@ -1,16 +1,15 @@
-* tic-tac-toe game for a try
-```python
-..O
-.X.
-..O
-```
-
 ---
 layout: post
 title: "Music Classifier Project by Group Spec-Taco-Lar"
 date: 2021-10-14 19:00:00
 ---
 
+*tic-tac-toe game for a try*
+```python
+..O
+.X.
+..O
+```
 
 *This proposal aims to guide our group throughout the project, ensuring everything to be on the right track.*
 
