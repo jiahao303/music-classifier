@@ -33,8 +33,8 @@ Machine learning is the fundamental tool for our project since our classificatio
 ## Ethics
 
 ## Tentative Schedule
-* After two weeks, we hope to have a cleaned dataset ready for our model, as well as have learned the basics of natural language processing. 
-* After four weeks, we hope to have chosen a classification model and have a minimum viable product. 
-* After six weeks, we hope to have fine tuned our model and have created a webapp, as well as explore songs in other languages.
+1. After two weeks, we hope to have a cleaned dataset ready for our model, as well as have learned the basics of natural language processing. 
+2. After four weeks, we hope to have chosen a classification model and have a minimum viable product. 
+3. After six weeks, we hope to have fine tuned our model and have created a webapp, as well as explore songs in other languages.
 
 
