@@ -31,6 +31,9 @@ Machine learning is the fundamental tool for our project since our classificatio
 
 ## Risks
 
+One risk is that we possibly could not find soundwaves data of songs or we do not have enough computational power to analyze soundwaves and therefore couldn’t incorporate such a factor to our genre classification. The other risk is that some songs that we adopt as the dataset may be subject to copyright issues.
+
+
 ## Ethics
 
 ## Tentative Schedule
