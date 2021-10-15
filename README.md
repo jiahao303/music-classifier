@@ -15,16 +15,12 @@ Layout: Post
 ## Abstract
 
 ## Planned Deliverables
-
-<<<<<<< HEAD
 We are aiming to create a webapp finally to classify the genre and identify the sentiments of a song. The webapp will be able to classify the genre and sentiments of a song by reviewing the lyrics. A classification model would be trained by us and implemented to the webapp.
 
 If we achieve full success, the webapp will have a nice interface for the users to input the lyrics of the songs to be analyzed, and through our trained model, the webapp will classify the genre and analyze the sentiments. If we achieve partial success, the model would be generated and there would be a blog post and code repository detailing our machine learning pipeline, which would offer hints and support for further improvement of the model and the development of the webapp. 
 
 The interface would be a form based one. To be specific, the interface would include a text area for the users to input the lyrics. Furthermore, the output would present the genre and sentiment identification result analyzed from the lyrics.
 
-=======
->>>>>>> a2f7719a1851c56e0281491acc3b765f9f9d85f7
 ## Resources Required
 
 ## Tools and Skills Required
