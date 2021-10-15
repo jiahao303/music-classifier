@@ -4,18 +4,11 @@
 .X.
 ..O
 ```
-
 ---
 layout: post
-<<<<<<< HEAD
 title: "Music Classifier Project by Group Spec-Taco-Lar"
+authors: "Jiahao Huang, Stella Wang, Tiana Liang"
 date: 2021-10-14 19:00:00
-=======
-title: Music Classifier Project by Group Spec-Taco-Lar\
-authors: Jiahao Huang, Stella Wang, Tiana Liang\
-date: 2021-10-04\
-
->>>>>>> efb8f9fa9428e96c4159b0c71ca389af4f0e71be
 ---
 
 *This proposal aims to guide our group throughout the project, ensuring everything to be on the right track.*
