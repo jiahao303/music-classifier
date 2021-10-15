@@ -5,10 +5,10 @@
 ..O
 ```
 ---
-Music Classifier Project by Group Spec-Taco-Lar\
-Authors: Jiahao Huang, Stella Wang, Tiana Liang\
-Date: 2021-10-04\
-Layout: Post
+title: Music Classifier Project by Group Spec-Taco-Lar\
+authors: Jiahao Huang, Stella Wang, Tiana Liang\
+date: 2021-10-04\
+layout: Post
 ---
 *This proposal aims to guide our group throughout the project, ensuring everything to be on the right track.*
 
