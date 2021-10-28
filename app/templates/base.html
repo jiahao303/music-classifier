@@ -1,0 +1,18 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>Music Classifier</title>
+<nav>
+  <h1>Input Song Lyrics to Get Song's Sentiment</h1>
+  <ul>
+    <li><a href="{{ url_for('hello')}}">Hello</a></li>
+    <li><a href="{{ url_for('submit') }}">Input song lyrics</a></li>
+
+  </ul>
+</nav>
+<section class="content">
+    <header>
+      {% block header %}{% endblock %}
+    </header>
+    {% block content %}{% endblock %}
+  </section>
+
