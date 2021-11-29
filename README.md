@@ -4,13 +4,21 @@ title: "Music Classifier Project by Group Spec-Taco-Lar"
 authors: Jiahao Huang, Stella Wang, Tiana Liang
 date: 2021-10-14 19:00:00
 ---
+# Update in NOV.29 (what we have for now; 3 questions we have)
+## What we have done recently
+1. We have built two models, which are all included in the file `Music Classifier Nov 29.`
+2. There is another file called `get_audio_features`. In this Notebook, we access the user input (an Spotify song ID, the Notebook has clarified how to get the ID for a song) and with the function, we could generate a dataframe specifying the audio features of that song in columns. This helps us to implement our model to user-specified songs.
 
-*tic-tac-toe game for a try*
-```python
-..O
-.X.
-..O
-```
+## What we are still working on
+1. build the webapp
+2. try to test our model with real examples
+
+## Questions we have
+1. We have created two models, one for classifying the sentiments with lyrics and one for classifying genres with audio files. We would like to know the models' complexity (i.e. types of layers/numbers of layers) and the corresponding interactive plot for analysis meet the expectation.
+2. We would like to know if the explanations for the code are specific enough so far. We have not fully completed all the text explanation, but basically we will be as specific as the explanations we have now for the first model (classifying sentiment with lyrics input).
+3. We are working on the webapp building now, and we are not sure if we will successfully implement our model into the webapp. Would that hurt our grade?
+
+-----------------------------------------------------------------------------------------------------------------
 
 *This proposal aims to guide our group throughout the project, ensuring everything to be on the right track.*
 
