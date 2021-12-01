@@ -87,11 +87,24 @@ lyrics = pd.DataFrame(dictionary,index=[0])
 
 print("hi")
 
+lyrics = tf.constant(lyrics)
+lyrics = lyrics[None,:]
+output = tf.constant(output, 'float64')
+output = output[None,:]
+
+test = tf.data.Dataset.from_tensor_slices(
+    {
+        "lyrics" : lyrics, 
+        "scalars" : output
+    }
+)
+
+print(len(test), test)
+
 # with keras.utils.CustomObjectScope({'custom_standardization':custom_standardization}):
 model = tf.keras.models.load_model("/Users/yiningliang/Desktop/PIC16B-Gitthub/music-classifier/app/mnist-model/fake_model4")
-#
 print("hi3")
-prediction = model.predict([lyrics,output])
+prediction = model.predict(test)
 print("hi4")
     #def result():
 
