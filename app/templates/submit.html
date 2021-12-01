@@ -5,29 +5,25 @@
 {% endblock %}
 
 {% block content %}
-  <form method="post">
+  <form action = "{{ url_for('predict')}}"method="post">
     <label for="lyrics">Your song lyrics:</label>
     <br>
-    <input name="lyrics" id="lyrics"> 
+    <input type = "text" name="lyrics" id="lyrics" required = "required"> 
     <br>
-    <input type="submit" value="Submit lyrics">
+    <label for="song">Your song:</label>
+    <br>
+    <input type = "text" name="song" id="song" required = "required">
+    <br>
+    <input type="submit" value ="Predict">
   </form>
 
-  <!--
-  {% if thanks %}
-    Thanks for submitting a file!
-  {% endif %}
-
+  {% if prediction %}
+    <br>
+    Thanks for uploading the song and its lyrics! We predict its genre to be a {{prediction}}.
+  {% endif %}  
   {% if digit %}
     <br>
-    Thanks for the image!  It looks like a {{digit}}.
-    <br>
-    <img src="{{ image }}", alt="an 8x8 visualization of the supplied digit."/>
-  {% endif %}
+    Sorry, we did not find the song. Please double check the song's Spotify ID.
+  {% endif %}  
 
-  {% if error %}
-    <br>
-    Oh no, we couldn't use that file!  Please upload an 8x8 numpy array as a text file.
-  {% endif %}
 {% endblock %}
-  -->
