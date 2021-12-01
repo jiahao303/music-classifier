@@ -1,7 +1,8 @@
 import os 
 from flask import Flask, current_app, g, render_template, redirect, request, flash, url_for
 import pickle
-
+import sys
+print(sys.path)
 
 
 import pandas as pd
@@ -10,8 +11,8 @@ import json
 
 app = Flask(__name__)
 
-import tensorflow as tf 
-from tensorflow import keras
+# import tensorflow as tf 
+# from tensorflow import keras
 import numpy as np 
 
 # from tensorflow.keras.models import load_model 
@@ -42,48 +43,48 @@ def submit():
         try:
             lyrics = request.form["lyrics"]
 
-            size_vocabulary = 2000
+            # size_vocabulary = 2000
 
-            vectorize_layer = TextVectorization(
-                standardize=standardization,
-                max_tokens= size_vocabulary, # only consider this many words
-                output_mode='int',
-                output_sequence_length=500) 
+            # vectorize_layer = TextVectorization(
+            #     standardize=standardization,
+            #     max_tokens= size_vocabulary, # only consider this many words
+            #     output_mode='int',
+            #     output_sequence_length=500) 
 
-            vectorize_layer.adapt(train.map(lambda x, y: x["lyrics"]))
+            # vectorize_layer.adapt(train.map(lambda x, y: x["lyrics"]))
 
-            scalars_input = keras.Input(
-                shape = (len(scalars),), 
-                name = "scalars",
-                dtype = "float64"
-            )
-            lyrics_input = keras.Input(
-                shape = (1,), 
-                name = "lyrics",
-                dtype = "string"
-            )
+            # scalars_input = keras.Input(
+            #     shape = (len(scalars),), 
+            #     name = "scalars",
+            #     dtype = "float64"
+            # )
+            # lyrics_input = keras.Input(
+            #     shape = (1,), 
+            #     name = "lyrics",
+            #     dtype = "string"
+            # )
 
-            lyrics_features = vectorize_layer(lyrics_input)
-            lyrics_features = keras.layers.Embedding(size_vocabulary, 7, name = "embedding")(lyrics_features)
-            lyrics_features = keras.layers.Dropout(0.2)(lyrics_features)
-            lyrics_features = keras.layers.GlobalAveragePooling1D()(lyrics_features)
-            lyrics_features = keras.layers.Dropout(0.2)(lyrics_features)
-            lyrics_features = keras.layers.Dense(64, activation='relu')(lyrics_features)
+            # lyrics_features = vectorize_layer(lyrics_input)
+            # lyrics_features = keras.layers.Embedding(size_vocabulary, 7, name = "embedding")(lyrics_features)
+            # lyrics_features = keras.layers.Dropout(0.2)(lyrics_features)
+            # lyrics_features = keras.layers.GlobalAveragePooling1D()(lyrics_features)
+            # lyrics_features = keras.layers.Dropout(0.2)(lyrics_features)
+            # lyrics_features = keras.layers.Dense(64, activation='relu')(lyrics_features)
 
-            scalar_features = keras.layers.Dense(64, activation='relu')(scalars_input)
-            main = keras.layers.concatenate([lyrics_features, scalar_features], axis = 1)
-            main = keras.layers.Dense(256, activation='relu')(main)
-            main = keras.layers.Dense(64, activation='relu')(main)
-            main = keras.layers.Dense(32, activation='relu')(main)
-            output = keras.layers.Dense(num_genres, name = "genre", activation = 'softmax')(main)
+            # scalar_features = keras.layers.Dense(64, activation='relu')(scalars_input)
+            # main = keras.layers.concatenate([lyrics_features, scalar_features], axis = 1)
+            # main = keras.layers.Dense(256, activation='relu')(main)
+            # main = keras.layers.Dense(64, activation='relu')(main)
+            # main = keras.layers.Dense(32, activation='relu')(main)
+            # output = keras.layers.Dense(num_genres, name = "genre", activation = 'softmax')(main)
 
-            model = keras.Model(
-                inputs = [lyrics_input, scalars_input],
-                outputs = output)
+            # model = keras.Model(
+            #     inputs = [lyrics_input, scalars_input],
+            #     outputs = output)
 
-            model.compile(optimizer = "adam",
-                loss = losses.SparseCategoricalCrossentropy(from_logits=False),
-                metrics=['accuracy'])
+            # model.compile(optimizer = "adam",
+            #     loss = losses.SparseCategoricalCrossentropy(from_logits=False),
+            #     metrics=['accuracy'])
 
 
    

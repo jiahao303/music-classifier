@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-  <form action = "{{ url_for('predict')}}"method="post">
+  <form action = "{{ url_for('submit')}}"method="post">
     <label for="lyrics">Your song lyrics:</label>
     <br>
     <input type = "text" name="lyrics" id="lyrics" required = "required"> 
@@ -19,9 +19,9 @@
 
   {% if prediction %}
     <br>
-    Thanks for uploading the song and its lyrics! We predict its genre to be a {{prediction}}.
+    Thanks for uploading the song and its lyrics! We predict its genre to be a.
   {% endif %}  
-  {% if digit %}
+  {% if error %}
     <br>
     Sorry, we did not find the song. Please double check the song's Spotify ID.
   {% endif %}  
