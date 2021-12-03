@@ -1,18 +1,25 @@
 <!doctype html>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<title>Music Classifier</title>
-<nav>
-  <h1>Input Lyrics and Song Spotify ID to Get Song's Genre</h1>
-  <ul>
-    <li><a href="{{ url_for('submit') }}">Input song lyrics</a></li>   
-    <li><a href="{{ url_for('submit')}}">View Genre Prediction</a></li>
-   
-    
-</nav>
-<section class="content">
-    <header>
-      {% block header %}{% endblock %}
-    </header>
-    {% block content %}{% endblock %}
+<html>
+<head>
+  <title>Music Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <a href="#" id="logo"></a>
+</head>
+
+<body>
+  <strong><nav>
+  <h1>What is the genre of this song?</h1>
+  <ul class = "menu">
+    <li><a href="{{ url_for('submit') }}">Input song lyrics and Song ID</a></li>
+  </ul>
+  </nav></strong>
+
+  <section class="content">
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+      {% block content %}{% endblock %}
   </section>
+</body>
+</html>
 
