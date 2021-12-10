@@ -6,7 +6,7 @@ Thank you for using our music classifier! The Jupyter notebook detailing the mod
 From there, you can view our web app. Here is a screenshot of how our webapp looks.
 ![applook1.png](applook1.png)
 
-After clicking on *Input song lyrics and Song ID*, you will see the section for you to input lyrics and the song ID.
+After clicking on *Input song lyrics and Song ID*, you will see the section for you to input lyrics and the song ID (where it says "Your song:").
 ![applook2.png](applook2.png)
 
 
