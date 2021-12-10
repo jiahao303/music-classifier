@@ -14,7 +14,7 @@ Input your song's lyrics in plain text where indicated. Be careful to copy your 
 
 Navigate to your song's Spotify page and copy the song's ID. Below is a screenshot showing where a song's ID is.
 
-![Spotify song ID](https://github.com/jiahao303/music-classifier/blob/main/spotify_id.png)
+![Spotify song ID](/images/spotify_id.png)
 
 Input this ID where indicated. Then predict the song and see what genre our model predicts!
 
