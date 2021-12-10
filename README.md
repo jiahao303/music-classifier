@@ -17,3 +17,13 @@ Navigate to your song's Spotify page and copy the song's ID. Below is a screensh
 ![Spotify song ID](https://github.com/jiahao303/music-classifier/blob/main/spotify_id.png)
 
 Input this ID where indicated. Then predict the song and see what genre our model predicts!
+
+# Limitations
+
+We haven't run into any limitations with our web app as of yet—it should be able to interact with a song with lyrics of any length and with any song on Spotify.
+
+For our model, we have three limitations: our dataset, songs that are in other languages, and songs that don't have lyrics.
+
+Our dataset was found on the internet, and while it did have relatively equal distributions between genre classes, it tended to predict hip-hop songs correctly more often than songs from other genres. More research is needed to see why this happens; we hypothesize that perhaps the lyrics of hip-hop songs are more distinct or that our dataset's selection of songs is skewed.
+
+We also don't consider songs in other languages, as well as NLP models in other languages. Finally, there are songs that don't have lyrics; we don't consider using soundwave data to classify these songs.
