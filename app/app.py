@@ -21,8 +21,7 @@ app = Flask(__name__)
 import tensorflow as tf
 import numpy as np 
 from tensorflow import keras 
-# from tensorflow.keras.backend import set_session
-# from skimage.transform import resize 
+
 
 import nltk
 from nltk.corpus import stopwords
@@ -32,13 +31,7 @@ nltk.download('stopwords')
 @app.route("/")
 def main():
     return render_template('base.html')
-# def main_page():
-#     if request.method == 'POST':
-#         file = request.files['file']
-#         filename = secure_filename(file.filename)
-#         file.save(os.path.join('uploads', filename))
-#         return redirect(url_for('prediction', filename=filename))
-#     return render_template('base.html')
+
 
 
 # def hello():
@@ -110,7 +103,7 @@ def submit():
             
             dictionary = {'lyrics':[lyrics]}
             lyrics = lyrics.lower()
-            #lyrics = lyrics.translate(str.maketrans("", "", string.punctuation))
+            
             lyrics = re.sub(r'[^\w\s]', "", lyrics)
             stop_words = set(stopwords.words("english"))
             lyrics = lyrics.split()
@@ -141,5 +134,5 @@ def submit():
         except Exception as e:
             print(e)
             return render_template("submit.html", error = True)
-#def result():
+
 
