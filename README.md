@@ -7,3 +7,4 @@ From there, you can view our web app. Input your song's lyrics in plain text whe
 
 Navigate to your song's Spotify page and copy the song's ID. Below is a screenshot showing where the ID is
 
+![Spotify song ID](https://github.com/jiahao303/music-classifier/blob/main/spotify_id.png)
