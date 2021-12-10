@@ -3,7 +3,14 @@
 
 Thank you for using our music classifier! The Jupyter notebook detailing the model and dataset is in the file Music_Classifier_FINAL.ipynb, and our web app lives in the `app` folder. To run the web app, navigate to the app folder and run `flask run`. 
 
-From there, you can view our web app. Input your song's lyrics in plain text where indicated. Be careful to copy your lyrics as plain text! Sites like genius.com may have annotations for the lyrics, which are copied along with the lyrics. Make sure to avoid these sites!
+From there, you can view our web app. Here is a screenshot of how our webapp looks.
+![applook1.png](applook1.png)
+
+After clicking on *Input song lyrics and Song ID*, you will see the section for you to input lyrics and the song ID.
+![applook2.png](applook2.png)
+
+
+Input your song's lyrics in plain text where indicated. Be careful to copy your lyrics as plain text! Sites like genius.com may have annotations for the lyrics, which are copied along with the lyrics. Make sure to avoid these sites!
 
 Navigate to your song's Spotify page and copy the song's ID. Below is a screenshot showing where a song's ID is.
 
