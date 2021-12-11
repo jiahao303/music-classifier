@@ -1,7 +1,9 @@
 # What Genre is Your Song? 
 
 
-Thank you for using our music classifier! The Jupyter notebook detailing the model and dataset is in the file Music_Classifier_FINAL.ipynb, and our web app lives in the `app` folder. To run the web app, navigate to the app folder and run `flask run`. 
+Thank you for using our music classifier! The Jupyter notebook detailing the model and dataset is in the file Music_Classifier_FINAL.ipynb, and our web app lives in the `app` folder. To run the web app, navigate to the app folder and run `flask run`.
+
+Make sure to change the path of the model(in line 128) to the correct path on your local computer. 
 
 From there, you can view our web app. Here is a screenshot of how our webapp looks.
 ![applook1.png](/images/applook1.png)
